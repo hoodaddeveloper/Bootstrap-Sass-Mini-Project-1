@@ -1,0 +1,11 @@
+// Importing the Variables
+@use "variables";
+
+// Importing Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Sass Codes
+
+body {
+  background: $primary;
+}
