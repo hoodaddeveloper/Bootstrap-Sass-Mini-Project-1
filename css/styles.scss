@@ -16,11 +16,13 @@ html {
 body {
   height: 100%;
   min-height: 100%;
+  overflow: hidden;
   font-family: "open sans";
 }
 
 .web-cv-section {
   position: relative;
+  animation: animationCV 0.9s cubic-bezier(0.680, -0.550, 0.265, 1.1550);
 
   .content {
     width: 500px;
@@ -47,19 +49,49 @@ body {
   }
 
   .icons {
+    left: 0;
+    right: 0;
     z-index: -1;
     bottom: 3px;
     width: 480px;
+    bottom: 10px;
     margin: 0 auto;
-    position: relative;
+    position: absolute;
     padding: 10px 20px;
     border-radius: 4px;
     box-shadow: 00 5px 0 rgba(30, 25, 30, 0.15);
+    animation: animationIcons 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) 0.75s forwards;
 
     i {
-      opacity: .5;
+      opacity: 0.5;
       margin: 0 8px;
       font-size: 1.5rem;
     }
+  }
+}
+
+// Animations
+
+// CV Animation
+@keyframes animationCV {
+  0% {
+    opacity: 0;
+    bottom: -500px;
+  }
+
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+// Icons Animation
+@keyframes animationIcons {
+  0% {
+    bottom: 10px;
+  }
+
+  100% {
+    bottom: -40px;
   }
 }

@@ -10783,11 +10783,13 @@ html {
 body {
   height: 100%;
   min-height: 100%;
+  overflow: hidden;
   font-family: "open sans";
 }
 
 .web-cv-section {
   position: relative;
+  animation: animationCV 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.155);
 }
 .web-cv-section .content {
   width: 500px;
@@ -10810,17 +10812,40 @@ body {
   font-size: 1.15rem;
 }
 .web-cv-section .icons {
+  left: 0;
+  right: 0;
   z-index: -1;
   bottom: 3px;
   width: 480px;
+  bottom: 10px;
   margin: 0 auto;
-  position: relative;
+  position: absolute;
   padding: 10px 20px;
   border-radius: 4px;
   box-shadow: 0 5px 0 rgba(30, 25, 30, 0.15);
+  animation: animationIcons 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.75s forwards;
 }
 .web-cv-section .icons i {
   opacity: 0.5;
   margin: 0 8px;
   font-size: 1.5rem;
+}
+
+@keyframes animationCV {
+  0% {
+    opacity: 0;
+    bottom: -500px;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+@keyframes animationIcons {
+  0% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: -40px;
+  }
 }
