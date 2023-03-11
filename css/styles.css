@@ -1,15 +1,8 @@
-// Custom Variables
-$primary: #2c3e50;
-$secondary: #16a085;
-
-// Sass Codes //
-
-%reset {
+body {
   margin: 0;
   padding: 0;
 }
 
-// Global Varialbes
 *,
 *:before,
 *:after {
@@ -22,6 +15,5 @@ html {
 
 body {
   height: 100%;
-  @extend %reset;
   min-height: 100%;
 }
