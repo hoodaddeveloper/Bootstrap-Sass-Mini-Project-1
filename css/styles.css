@@ -5,6 +5,7 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Open+Sans:ital,wght@0,300;0,800;1,400&family=Space+Mono&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10769,11 +10770,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body {
-  margin: 0;
-  padding: 0;
-}
-
 *,
 *:before,
 *:after {
@@ -10787,4 +10783,44 @@ html {
 body {
   height: 100%;
   min-height: 100%;
+  font-family: "open sans";
+}
+
+.web-cv-section {
+  position: relative;
+}
+.web-cv-section .content {
+  width: 500px;
+  padding: 20px;
+  position: relative;
+  border-radius: 4px;
+  background: white;
+  box-shadow: 0 5px 0 rgba(30, 25, 30, 0.15);
+}
+.web-cv-section img {
+  width: 130px;
+  height: 130px;
+  max-width: 100%;
+  border-radius: 50%;
+}
+.web-cv-section h1 {
+  font-size: 1.85rem;
+}
+.web-cv-section h3 {
+  font-size: 1.15rem;
+}
+.web-cv-section .icons {
+  z-index: -1;
+  bottom: 3px;
+  width: 480px;
+  margin: 0 auto;
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 rgba(30, 25, 30, 0.15);
+}
+.web-cv-section .icons i {
+  opacity: 0.5;
+  margin: 0 8px;
+  font-size: 1.5rem;
 }

@@ -3,12 +3,6 @@
 
 // Sass Codes
 
-%reset {
-  margin: 0;
-  padding: 0;
-}
-
-// Global Varialbes
 *,
 *:before,
 *:after {
@@ -21,6 +15,51 @@ html {
 
 body {
   height: 100%;
-  @extend %reset;
   min-height: 100%;
+  font-family: "open sans";
+}
+
+.web-cv-section {
+  position: relative;
+
+  .content {
+    width: 500px;
+    padding: 20px;
+    position: relative;
+    border-radius: 4px;
+    background: white;
+    box-shadow: 00 5px 0 rgba(30, 25, 30, 0.15);
+  }
+
+  img {
+    width: 130px;
+    height: 130px;
+    max-width: 100%;
+    border-radius: 50%;
+  }
+
+  h1 {
+    font-size: 1.85rem;
+  }
+
+  h3 {
+    font-size: 1.15rem;
+  }
+
+  .icons {
+    z-index: -1;
+    bottom: 3px;
+    width: 480px;
+    margin: 0 auto;
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 00 5px 0 rgba(30, 25, 30, 0.15);
+
+    i {
+      opacity: .5;
+      margin: 0 8px;
+      font-size: 1.5rem;
+    }
+  }
 }
