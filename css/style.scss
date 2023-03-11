@@ -1,7 +1,1 @@
-// Custom Variables
-$dark: #1b2c45;
-$primary: #2c95ff;
-$secondary: #b6b6b6;
-
-// Importing Bootstrap & Material Icons
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@use "variables";
