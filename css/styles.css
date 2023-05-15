@@ -101,11 +101,11 @@ body {
 }
 
 hr {
+  border: 0;
+  opacity: 0.25;
   margin: 1rem 0;
   color: inherit;
-  border: 0;
   border-top: 1px solid;
-  opacity: 0.25;
 }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
@@ -165,14 +165,14 @@ p {
 }
 
 abbr[title] {
-  text-decoration: underline dotted;
   cursor: help;
   text-decoration-skip-ink: none;
+  text-decoration: underline dotted;
 }
 
 address {
-  margin-bottom: 1rem;
   font-style: normal;
+  margin-bottom: 1rem;
   line-height: inherit;
 }
 
@@ -200,8 +200,8 @@ dt {
 }
 
 dd {
-  margin-bottom: 0.5rem;
   margin-left: 0;
+  margin-bottom: 0.5rem;
 }
 
 blockquote {
@@ -224,9 +224,9 @@ mark, .mark {
 
 sub,
 sup {
-  position: relative;
-  font-size: 0.75em;
   line-height: 0;
+  font-size: 0.75em;
+  position: relative;
   vertical-align: baseline;
 }
 
